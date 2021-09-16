@@ -1,6 +1,16 @@
 header {
     padding: 30px 0;
 }
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    padding: 0 40px;
+}
+header ul li:first-child {
+    padding-left: 0px;
+}
 .p-hamburger {
     cursor: pointer;
 }
@@ -9,4 +19,10 @@ header {
     width: 5px;
     color: rgb(0, 0, 0);
     display: block;
+}
+.p-hamburger span :nth-child(2) {
+    width: 10px;
+}
+.p-hamburger span :last-child {
+    margin-bottom: 0;
 }
