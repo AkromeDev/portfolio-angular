@@ -1,0 +1,29 @@
+.p-profile {
+    background: url(/assets/images/portrait.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.p-tag {
+    background-color: rgb(133, 133, 128);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.p-readmore {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.p-readmore img {
+    transition: all .5s;
+}
+.p-readmore:hover img,
+.p-readmore:hover ~ img {
+    transform: translateX(5px);
+}
+.p-des {
+    color: rgb(143, 143, 143);
+    width: 80%;
+}
