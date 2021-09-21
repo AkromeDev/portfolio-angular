@@ -40,10 +40,19 @@ header {
                     bottom: -2px;
                     z-index: -1;
                 }
-
             }
         }
     }
+}
+.is-active::after {
+    content: "";
+    background-color: #7ed4a9 !important;
+    height: 10px;
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    bottom: -2px;
+    z-index: -1;
 }
 .p-hamburger {
     cursor: pointer;
