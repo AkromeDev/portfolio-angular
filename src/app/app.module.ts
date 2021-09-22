@@ -13,7 +13,7 @@ import { SlidesComponent } from './slides/slides.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SlidesComponent
+    SlidesComponent,
   ],
   imports: [
     BrowserModule,
