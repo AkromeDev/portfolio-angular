@@ -1,10 +1,35 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+:root {
+    // First Theme
+    // --first-accent: rgba(73, 204, 205, 1);
+    // --second-accent: rgb(60,126,173, 1);
+    // --third-accent: rgb(221, 187, 112, 1);
+    // --dark-first: rgba(26, 32, 44, 1);
+    // --light-first: rgba(255, 255, 255, 1);
+    // --gray-first: rgb(165, 165, 165);
 
+    // Second Theme
+    // --first-accent: rgba(132, 198, 166, 1);
+    // --second-accent: rgba(10, 72, 169, 1);
+    // --dark-first: rgba(26, 32, 44, 1);
+    // --light-first: rgba(255, 255, 255, 1);
+    // --gray-first: rgb(165, 165, 165);
+
+    // Third Theme
+    --first-accent: rgba(73, 204, 205, 1);
+    --second-accent: rgb(60,126,173, 1);
+    --third-accent: rgba(221, 187, 112, 1);
+    --dark-first: rgba(247, 205, 117, 1);
+    --light-first: rgba(26, 32, 44, 1);
+    --light-second: rgb(255, 255, 255);
+    --gray-first: rgb(105, 105, 105);
+}
 body {
     margin: 0;
     padding: 0;
     font-family: "DejaVu Sans Mono", monospace;
     font-size: 17px;
+    background-color: var(--dark-first);
 }
 p {
     margin: 0;
@@ -19,6 +44,7 @@ a, a:hover {
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
+    color: var(--light-first);
 }
 h1 {
     font-size: 45px;
@@ -29,16 +55,10 @@ h1 {
     
  &:before {
     content: '';
-    background-color: rgb(149, 236, 190);
+    background-color: var(--first-accent);
     height: 100vh;
     width: 25vw;
     position: absolute;
     z-index: -1;
  }
-}
-.align-center {
-    align-items: center;
-}
-.justify-sb {
-    justify-content: space-between;
 }

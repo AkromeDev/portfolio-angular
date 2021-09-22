@@ -15,14 +15,14 @@ header {
                 padding-right: 0;
             }
             & a {
-                color: rgba(0, 0, 0, 1);
+                color: var(--light-first);
                 background-color: transparent;
                 font-weight: 500;
                 position: relative;
 
                 &::after {
                     content: "";
-                    background-color: #95ecbe;
+                    background-color: var(--first-accent);
                     height: 10px;
                     position: absolute;
                     width: 100%;
@@ -32,7 +32,7 @@ header {
                 }
                 &:hover::after {
                     content: "";
-                    background-color: #7ed4a9;
+                    background-color: var(--second-accent);
                     height: 10px;
                     position: absolute;
                     width: 100%;
@@ -44,9 +44,15 @@ header {
         }
     }
 }
+.align-center {
+    align-items: center;
+}
+.justify-sb {
+    justify-content: space-between;
+}
 .is-active::after {
     content: "";
-    background-color: #7ed4a9 !important;
+    background-color: var(--second-accent) !important;
     height: 10px;
     position: absolute;
     width: 100%;
@@ -60,7 +66,7 @@ header {
     & span {
         width: 20px;
         height: 3px;
-        background-color: rgb(12, 8, 8);
+        background-color: var(--dark-first);
         display: block;
         margin-bottom: 4px;
 
@@ -71,17 +77,6 @@ header {
             margin-bottom: 0;
             width: 17px;
         }
-        // &:hover {
-        //     &:first-child {
-        //         transform: translateY(-3px);
-        //     }
-        //     &:nth-child(2) {
-        //         transform: rotateX(1080);
-        //     }
-        //     &:last-child {
-        //         transform: translateY(3px);
-        //     }
-        // }
     }
 }
 
